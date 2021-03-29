@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FlutterAnalogClockPainter extends CustomPainter {
   static const List<String> defaultHourNumbers = [
-    '1',
+    'a',
     '2',
     '3',
     '4',
