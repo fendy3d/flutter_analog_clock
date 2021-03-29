@@ -82,6 +82,12 @@ class FlutterAnalogClock extends StatefulWidget {
       this.child,
       Key key})
       : super(key: key);
+  
+  void increaseOneHourz() {
+
+    this.dateTime = this.dateTime?.add(Duration(hours: 1));
+
+  }
 
   @override
   _FlutterAnalogClockState createState() =>
