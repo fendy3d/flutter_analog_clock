@@ -141,6 +141,12 @@ class _FlutterAnalogClockState extends State<FlutterAnalogClock> {
     );
   }
 
+  void increaseOneHour() {
+    setState(() {
+      _dateTime = _dateTime?.add(Duration(hours: 1));
+    });
+  }
+
   @override
   void dispose() {
     _timer?.cancel();
