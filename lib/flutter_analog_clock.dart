@@ -110,6 +110,9 @@ class _FlutterAnalogClockState extends State<FlutterAnalogClock> {
 
   @override
   Widget build(BuildContext context) {
+    if (mounted) {
+      setState(() {});
+    }
     return Container(
       width: widget.width,
       height: widget.height,
