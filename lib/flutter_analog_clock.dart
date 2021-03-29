@@ -96,6 +96,7 @@ class _FlutterAnalogClockState extends State<FlutterAnalogClock> {
   @override
   void initState() {
     super.initState();
+    print("init - Fendy's git");
     if (!widget.isLive && this._dateTime == null)
       this._dateTime = DateTime.now();
     _timer = widget.isLive
@@ -110,7 +111,7 @@ class _FlutterAnalogClockState extends State<FlutterAnalogClock> {
 
   @override
   Widget build(BuildContext context) {
-    
+    print("build - Fendy's git");
     return Container(
       width: widget.width,
       height: widget.height,
