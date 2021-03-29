@@ -214,23 +214,24 @@ class FlutterAnalogClockPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(FlutterAnalogClockPainter oldDelegate) {
-    return _datetime != oldDelegate._datetime ||
-        dialPlateColor != oldDelegate.dialPlateColor ||
-        hourHandColor != oldDelegate.hourHandColor ||
-        minuteHandColor != oldDelegate.minuteHandColor ||
-        secondHandColor != oldDelegate.secondHandColor ||
-        tickColor != oldDelegate.tickColor ||
-        numberColor != oldDelegate.numberColor ||
-        borderColor != oldDelegate.borderColor ||
-        centerPointColor != oldDelegate.centerPointColor ||
-        showBorder != oldDelegate.showBorder ||
-        showTicks != oldDelegate.showTicks ||
-        showMinuteHand != oldDelegate.showMinuteHand ||
-        showSecondHand != oldDelegate.showSecondHand ||
-        showNumber != oldDelegate.showNumber ||
-        hourNumbers != oldDelegate.hourNumbers ||
-        _borderWidth != oldDelegate._borderWidth ||
-        hourNumberScale != oldDelegate.hourNumberScale;
+    return true;
+//     return _datetime != oldDelegate._datetime ||
+//         dialPlateColor != oldDelegate.dialPlateColor ||
+//         hourHandColor != oldDelegate.hourHandColor ||
+//         minuteHandColor != oldDelegate.minuteHandColor ||
+//         secondHandColor != oldDelegate.secondHandColor ||
+//         tickColor != oldDelegate.tickColor ||
+//         numberColor != oldDelegate.numberColor ||
+//         borderColor != oldDelegate.borderColor ||
+//         centerPointColor != oldDelegate.centerPointColor ||
+//         showBorder != oldDelegate.showBorder ||
+//         showTicks != oldDelegate.showTicks ||
+//         showMinuteHand != oldDelegate.showMinuteHand ||
+//         showSecondHand != oldDelegate.showSecondHand ||
+//         showNumber != oldDelegate.showNumber ||
+//         hourNumbers != oldDelegate.hourNumbers ||
+//         _borderWidth != oldDelegate._borderWidth ||
+//         hourNumberScale != oldDelegate.hourNumberScale;
   }
 
   static double getRadians(double angle) {
