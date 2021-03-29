@@ -9,7 +9,7 @@ import 'package:flutter/cupertino.dart';
 
 /// A analog clock.
 class FlutterAnalogClock extends StatefulWidget {
-  final DateTime dateTime;
+  DateTime dateTime;
   final Color dialPlateColor;
   final Color hourHandColor;
   final Color minuteHandColor;
@@ -83,11 +83,7 @@ class FlutterAnalogClock extends StatefulWidget {
       Key key})
       : super(key: key);
   
-  void increaseOneHourz() {
 
-    this.dateTime = this.dateTime?.add(Duration(hours: 1));
-
-  }
 
   @override
   _FlutterAnalogClockState createState() =>
