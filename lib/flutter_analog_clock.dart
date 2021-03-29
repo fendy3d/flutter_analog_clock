@@ -32,7 +32,7 @@ class FlutterAnalogClock extends StatefulWidget {
   final BoxDecoration decoration;
   final Widget child;
 
-  const FlutterAnalogClock(
+  FlutterAnalogClock(
       {this.dateTime,
       this.dialPlateColor = Colors.white,
       this.hourHandColor = Colors.black,
@@ -57,7 +57,7 @@ class FlutterAnalogClock extends StatefulWidget {
       this.child,
       Key key})
       : super(key: key);
-  const FlutterAnalogClock.dark(
+  FlutterAnalogClock.dark(
       {this.dateTime,
       this.dialPlateColor = Colors.black,
       this.hourHandColor = Colors.grey,
