@@ -63,7 +63,6 @@ class FlutterAnalogClockPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    print("paint - FL");
     //clock radius
     final radius = min(size.width, size.height) / 2;
     //clock circumference
@@ -155,7 +154,6 @@ class FlutterAnalogClockPainter extends CustomPainter {
 
   /// draw number（1 - 12）
   double _paintHourText(Canvas canvas, double radius, double fontSize) {
-    print("paintHourText - FL");
     double maxTextHeight = 0;
     for (var i = 0; i < 12; i++) {
       double _angle = i * 30.0;
@@ -183,13 +181,14 @@ class FlutterAnalogClockPainter extends CustomPainter {
 
   /// draw hour hand
   void _paintHourHand(Canvas canvas, double radius, double strokeWidth) {
-    print("paintHourHand - FL");
+    
     double angle = _datetime.hour % 12 + _datetime.minute / 60.0 - 3;
     Offset handOffset = Offset(cos(getRadians(angle * 30)) * radius,
         sin(getRadians(angle * 30)) * radius);
     final hourHandPaint = Paint()
       ..color = this.hourHandColor
       ..strokeWidth = strokeWidth;
+    print("paintHourHand ${_datetime.hour}, $angle - FL");
     canvas.drawLine(Offset(0, 0), handOffset, hourHandPaint);
   }
 
