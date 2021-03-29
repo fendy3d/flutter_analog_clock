@@ -126,7 +126,6 @@ class FlutterAnalogClockPainter extends CustomPainter {
   /// draw ticks
   void _paintTicks(
       Canvas canvas, double radius, double tickWidth, double bigTickWidth) {
-    print("paintTicks - FL");
     List<Offset> ticks = [];
     List<Offset> bigTicks = [];
     for (var i = 0; i < 60; i++) {
