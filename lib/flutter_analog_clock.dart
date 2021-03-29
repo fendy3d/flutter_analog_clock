@@ -100,7 +100,7 @@ class _FlutterAnalogClockState extends State<FlutterAnalogClock> {
       this._dateTime = DateTime.now();
     _timer = widget.isLive
         ? Timer.periodic(Duration(seconds: 1), (Timer timer) {
-            _dateTime = _dateTime?.add(Duration(hour: 1));
+            _dateTime = _dateTime?.add(Duration(hours: 1));
             if (mounted) {
               setState(() {});
             }
